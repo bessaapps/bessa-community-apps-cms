@@ -384,8 +384,8 @@ export interface ApiPersonaPersona extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    bg: Schema.Attribute.String;
     body: Schema.Attribute.Blocks;
-    color: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -32,7 +32,7 @@
     "slug": {
       "type": "string"
     },
-    "color": {
+    "bg": {
       "type": "string"
     }
   }
