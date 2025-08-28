@@ -11,13 +11,28 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "keyword": {
       "type": "string"
     },
-    "description": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "shortTitle": {
+      "type": "string"
+    },
+    "shortDescription": {
       "type": "string"
     },
     "bg": {
+      "type": "string"
+    },
+    "slug": {
       "type": "string"
     }
   }
