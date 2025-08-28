@@ -400,42 +400,8 @@ export interface ApiCustomerCustomer extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     shortDescription: Schema.Attribute.String;
     shortTitle: Schema.Attribute.String;
-    subheading: Schema.Attribute.String;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
-export interface ApiPersonaPersona extends Struct.CollectionTypeSchema {
-  collectionName: 'personas';
-  info: {
-    displayName: 'Persona';
-    pluralName: 'personas';
-    singularName: 'persona';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    bg: Schema.Attribute.String;
-    content: Schema.Attribute.Blocks;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    description: Schema.Attribute.String;
-    heading: Schema.Attribute.String;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::persona.persona'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.String;
     subheading: Schema.Attribute.String;
-    tag: Schema.Attribute.String;
-    title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -982,7 +948,6 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::customer.customer': ApiCustomerCustomer;
-      'api::persona.persona': ApiPersonaPersona;
       'api::service.service': ApiServiceService;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

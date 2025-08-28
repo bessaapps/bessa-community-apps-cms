@@ -31,6 +31,9 @@
     },
     "bg": {
       "type": "string"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
