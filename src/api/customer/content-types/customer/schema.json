@@ -34,15 +34,6 @@
     },
     "slug": {
       "type": "string"
-    },
-    "test": {
-      "type": "customField",
-      "customField": "plugin::ckeditor.CKEditor",
-      "options": {
-        "output": "HTML",
-        "licenseKey": "eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3ODgwNDc5OTksImp0aSI6ImY5ZmMyMmRhLTBjMjAtNGE3Mi1iNjkxLWY3MTIzNDg5YzgzYSIsInVzYWdlRW5kcG9pbnQiOiJodHRwczovL3Byb3h5LWV2ZW50LmNrZWRpdG9yLmNvbSIsImRpc3RyaWJ1dGlvbkNoYW5uZWwiOlsiY2xvdWQiLCJkcnVwYWwiXSwiZmVhdHVyZXMiOlsiRFJVUCIsIkUyUCIsIkUyVyJdLCJ2YyI6ImY1MWU0OTc1In0.7OzMTo3dggU5lj9NyGtXpWwV80ZLlIij0BIymfc7zV366xYKJsn1nNgDQdDcayJcsV0GYQL9BbuLKI93sMHbgg",
-        "preset": "rich"
-      }
     }
   }
 }

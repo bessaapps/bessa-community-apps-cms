@@ -402,15 +402,6 @@ export interface ApiCustomerCustomer extends Struct.CollectionTypeSchema {
     shortTitle: Schema.Attribute.String;
     slug: Schema.Attribute.String;
     subheading: Schema.Attribute.String;
-    test: Schema.Attribute.RichText &
-      Schema.Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          licenseKey: 'eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3ODgwNDc5OTksImp0aSI6ImY5ZmMyMmRhLTBjMjAtNGE3Mi1iNjkxLWY3MTIzNDg5YzgzYSIsInVzYWdlRW5kcG9pbnQiOiJodHRwczovL3Byb3h5LWV2ZW50LmNrZWRpdG9yLmNvbSIsImRpc3RyaWJ1dGlvbkNoYW5uZWwiOlsiY2xvdWQiLCJkcnVwYWwiXSwiZmVhdHVyZXMiOlsiRFJVUCIsIkUyUCIsIkUyVyJdLCJ2YyI6ImY1MWU0OTc1In0.7OzMTo3dggU5lj9NyGtXpWwV80ZLlIij0BIymfc7zV366xYKJsn1nNgDQdDcayJcsV0GYQL9BbuLKI93sMHbgg';
-          output: 'HTML';
-          preset: 'rich';
-        }
-      >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
