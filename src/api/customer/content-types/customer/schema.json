@@ -29,9 +29,6 @@
     "shortDescription": {
       "type": "string"
     },
-    "bg": {
-      "type": "string"
-    },
     "slug": {
       "type": "string"
     }

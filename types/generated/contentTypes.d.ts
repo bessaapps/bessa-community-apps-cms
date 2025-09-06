@@ -384,7 +384,6 @@ export interface ApiCustomerCustomer extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    bg: Schema.Attribute.String;
     content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -449,7 +448,6 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    bg: Schema.Attribute.String;
     content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
