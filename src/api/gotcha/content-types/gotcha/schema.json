@@ -11,11 +11,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
       "type": "string"
     },
     "content": {
-      "type": "richtext"
+      "type": "blocks"
     },
     "slug": {
       "type": "string"
